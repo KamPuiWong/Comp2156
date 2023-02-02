@@ -29,4 +29,14 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      # Install nodeJs
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with: 
+          node-version: "16.x"
+
+      # Install project dependencies
+      - name: Install dependencies
+        run: npm install
+
 
